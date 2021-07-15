@@ -1,4 +1,4 @@
 <header>
-    <h1>Tasks dashboard</h1>
-    <app-button color="blue" text="Add" (btnClick)="toggleAddTask()"></app-button>
+  <h1>Tasks dashboard</h1>
+  <app-button color="{{ showAddTask ? 'black' :'blue' }}" text="{{ showAddTask ? 'Close' :'Add' }}" (btnClick)="toggleAddTask()"></app-button>
 </header>
