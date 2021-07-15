@@ -22,7 +22,7 @@ export class TasksItemComponent implements OnInit {
     this.ondeleteTask.emit(task);
   }
 
-  onToggle(task: Task): void{
+  onToggleDone(task: Task): void{
     this.onToggleTask.emit(task);
   }
 }
