@@ -10,7 +10,7 @@ export class AddTaskComponent implements OnInit {
   @Output() onAddTask : EventEmitter<Task> = new EventEmitter();
   text: string;
   day: string;
-  reminder = false;
+  done = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -24,11 +24,11 @@ export class AddTaskComponent implements OnInit {
     const newTask = {
       text: this.text,
       day: this.day,
-      reminder: this.reminder
+      done: this.done
     };
     this.onAddTask.emit(newTask);
     this.text = '';
     this.day = '';
-    this.reminder = false;
+    this.done = false;
   }
 }
