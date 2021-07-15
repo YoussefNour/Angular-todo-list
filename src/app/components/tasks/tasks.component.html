@@ -1,20 +1,21 @@
 <app-add-task (onAddTask)="addTask($event)"></app-add-task>
+<div class="form-control">
+  <input
+    [(ngModel)]="query"
+    type="text"
+    name="search"
+    id="search"
+    (keyup)="seachTask()"
+    placeholder="search"
+  />
 
-<input
-  [(ngModel)]="query"
-  class="form-control"
-  type="text"
-  name="search"
-  id="search"
-  (keyup)="seachTask()"
-  placeholder="search"
-/>
-
-<fa-icon
-  [ngStyle]="{ color: 'black' }"
-  [icon]="faSort"
-  (click)="SortUnDoneFirst()"
-></fa-icon>
+  <fa-icon
+    class="sort-icon"
+    [ngStyle]="{ color: 'black' }"
+    [icon]="faSort"
+    (click)="SortUnDoneFirst()"
+  ></fa-icon>
+</div>
 
 <app-tasks-item
   *ngFor="let task of tasks"
