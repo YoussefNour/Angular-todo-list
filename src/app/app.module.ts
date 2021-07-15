@@ -11,6 +11,7 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { TasksItemComponent } from './components/tasks-item/tasks-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddTaskComponent } from './components/add-task/add-task.component';
+import { UtilityBarComponent } from './components/utility-bar/utility-bar.component';
 
 const appRoutes: Routes = [
   {path: '', component: TasksComponent}
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
     ButtonComponent,
     TasksComponent,
     TasksItemComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    UtilityBarComponent
   ],
   imports: [
     BrowserModule,
