@@ -4,7 +4,7 @@
       "id": 1,
       "text": "Doctors Appointment",
       "day": "May 5th at 2:30pm",
-      "done": true
+      "done": false
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "id": 3,
       "text": "Food Shopping",
       "day": "May 7th at 12:30pm",
-      "done": false
+      "done": true
     },
     {
       "id": 4,
@@ -26,9 +26,14 @@
     },
     {
       "text": "deliver task",
-      "day": "15 July 1:00 pm",
-      "done": true,
+      "day": "July 15th 2:00 pm",
+      "done": false,
       "id": 5
+    },
+    {
+      "text": "a",
+      "done": false,
+      "id": 6
     }
   ]
 }

@@ -30,7 +30,15 @@ export class TaskService {
     return this.http.put<Task>(url, task, httpOptions);
   }
 
-  addTask(task: Task):  Observable<Task>{
+  addTask(task: Task): Observable<Task>{
     return this.http.post<Task>(this.apiUrl, task, httpOptions);
+  }
+
+  sortTasks(tasks: Task[]): Observable<Task[]>{
+    return this.http.get<Task[]>(this.apiUrl + '?_sort=done&_order=asc');
+  }
+
+  searchTask(query: string): Observable<Task[]>{
+    return this.http.get<Task[]>(this.apiUrl + `?q=${query}`);
   }
 }
