@@ -19,6 +19,7 @@ body {
   padding: 30px;
   border-radius: 5px;
 }
+
 .btn {
   display: inline-block;
   background: #000;
@@ -73,4 +74,11 @@ body {
 .form-control-check input {
   flex: 2;
   height: 20px;
+}
+
+.mycontrol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
