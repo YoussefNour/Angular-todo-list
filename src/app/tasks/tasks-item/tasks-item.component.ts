@@ -1,5 +1,6 @@
 import { Component, OnInit , Input, Output, EventEmitter } from '@angular/core';
 import { Task } from 'src/app/models/Task';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -9,20 +10,19 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 })
 export class TasksItemComponent implements OnInit {
   @Input() task: Task;
-  @Output() ondeleteTask: EventEmitter<Task> = new EventEmitter();
-  // tslint:disable-next-line: no-output-on-prefix
-  @Output() onToggleTask: EventEmitter<Task> = new EventEmitter();
+  @Output() deleteTask: EventEmitter<Task> = new EventEmitter();
+  @Output() ToggleTask: EventEmitter<Task> = new EventEmitter();
   faTimes = faTimes;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onDelete(task: Task): void{
-    this.ondeleteTask.emit(task);
+  Delete(task: Task): void{
+    this.deleteTask.emit(task);
   }
 
-  onToggleDone(task: Task): void{
-    this.onToggleTask.emit(task);
+  ToggleDone(task: Task): void{
+    this.ToggleTask.emit(task);
   }
 }
