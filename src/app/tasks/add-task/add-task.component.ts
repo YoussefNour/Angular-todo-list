@@ -34,7 +34,7 @@ export class AddTaskComponent implements OnInit {
       day: this.day,
       done: this.done,
     };
-    this.onAddTask.emit(newTask);
+    this.AddTask.emit(newTask);
     this.text = '';
     this.day = '';
     this.done = false;
