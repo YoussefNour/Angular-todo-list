@@ -23,8 +23,4 @@ import { AboutComponent } from './components/about/about.component';
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  // constructor(fa: FaIconLibrary, faConfig: FaConfig) {
-  //   fa.addIconPacks(fab, fas, far);
-  //   faConfig.fixedWidth = true;
-  // }
 }

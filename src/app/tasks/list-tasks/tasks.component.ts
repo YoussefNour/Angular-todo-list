@@ -3,7 +3,6 @@ import { Task } from '../../models/Task';
 import { TaskService } from 'src/app/services/task.service';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
 
-
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
@@ -11,11 +10,11 @@ import { faSort } from '@fortawesome/free-solid-svg-icons';
 })
 export class TasksComponent implements OnInit {
   tasks: Task[] = [];
-  faSort = faSort;
+  fasort = faSort;
   query: string;
   constructor(private taskService: TaskService) {}
   ngOnInit(): void {
-    this.taskService.getTasks().subscribe((tasks) => this.tasks = tasks);
+    this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
   }
   deleteTask(task: Task): void {
     this.taskService

@@ -9,7 +9,7 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./add-task.component.css'],
 })
 export class AddTaskComponent implements OnInit {
-  @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
+  @Output() AddTask: EventEmitter<Task> = new EventEmitter();
   text: string;
   day: string;
   done = false;

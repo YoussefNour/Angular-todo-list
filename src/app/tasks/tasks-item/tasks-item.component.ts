@@ -1,6 +1,5 @@
 import { Component, OnInit , Input, Output, EventEmitter } from '@angular/core';
 import { Task } from 'src/app/models/Task';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({

@@ -1,4 +1,4 @@
-<app-add-task (onAddTask)="addTask($event)"></app-add-task>
+<app-add-task (AddTask)="addTask($event)"></app-add-task>
 <div class="form-control">
   <input
     [(ngModel)]="query"
@@ -12,7 +12,7 @@
   <fa-icon
     class="sort-icon"
     [ngStyle]="{ color: 'black' }"
-    [icon]="faSort"
+    [icon]="fasort"
     (click)="SortUnDoneFirst()"
   ></fa-icon>
 </div>
@@ -20,6 +20,6 @@
 <app-tasks-item
   *ngFor="let task of tasks"
   [task]="task"
-  (ondeleteTask)="deleteTask(task)"
-  (onToggleTask)="toggleTask(task)"
+  (deleteTask)="deleteTask(task)"
+  (ToggleTask)="toggleTask(task)"
 ></app-tasks-item>
