@@ -7,16 +7,17 @@ import { AppComponent } from './app.component';
 
 import { LayoutModule } from './layout/layout.module';
 import { TasksModule } from './tasks/tasks.module';
-import { AboutComponent } from './components/about/about.component';
+import { AboutModule } from './about/about.module';
 
 @NgModule({
-  declarations: [AppComponent, AboutComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
     TasksModule,
     AppRoutingModule,
     LayoutModule,
+    AboutModule
   ],
   exports: [FontAwesomeModule],
   providers: [],
