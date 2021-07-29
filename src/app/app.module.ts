@@ -6,18 +6,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppComponent } from './app.component';
 
 import { LayoutModule } from './layout/layout.module';
-import { TasksModule } from './tasks/tasks.module';
-import { AboutModule } from './about/about.module';
+import { ViewsModule } from './views/views.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
-    TasksModule,
     AppRoutingModule,
     LayoutModule,
-    AboutModule
+    ViewsModule
   ],
   exports: [FontAwesomeModule],
   providers: [],

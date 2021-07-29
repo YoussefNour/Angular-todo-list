@@ -7,12 +7,13 @@ import { LayoutModule } from '../layout/layout.module';
 import { AddTaskComponent } from './add-task/add-task.component';
 import { TasksComponent } from './list-tasks/tasks.component';
 import { TasksItemComponent } from './tasks-item/tasks-item.component';
+import { TasksRoutingModule } from './tasks-routing.module';
 
 const COMPONENTS = [TasksComponent, TasksItemComponent, AddTaskComponent];
 
 @NgModule({
   declarations: [...COMPONENTS],
-  imports: [CommonModule, FontAwesomeModule, FormsModule, LayoutModule],
-  exports: [...COMPONENTS],
+  imports: [CommonModule, FontAwesomeModule, FormsModule, LayoutModule, TasksRoutingModule],
+  // exports: [...COMPONENTS],
 })
 export class TasksModule {}

@@ -13,4 +13,12 @@ const COMPONENTS = [HeaderComponent, ButtonComponent, FooterComponent];
   imports: [CommonModule, RouterModule],
   exports: [...COMPONENTS],
 })
-export class LayoutModule {}
+export class LayoutModule {
+  // tslint:disable-next-line: typedef
+  // static forRoot(){
+  //   return {
+  //     NgModule: LayoutModule,
+  //     providers: []
+  //   };
+  // }
+}

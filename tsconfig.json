@@ -17,5 +17,9 @@
       "dom"
     ]
   },
-  "strictPropertyInitialization": false
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "preserveWhitespaces": false,
+    "strictTemplates": true
+  }
 }
